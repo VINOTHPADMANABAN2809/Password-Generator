@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="icon" href="title.png" type="image/png">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="at-symbol"></div>
+    <div class="container">
+        <h1>Password Generator</h1>
+    
+
+        <div class="inputBox">
+            <input type="text" class="passBox" id="passBox" disabled>
+            <span class="material-icons" id="copyIcon">content_copy</span>
+        </div>
+        <div class="pass-indicator" id="passIndicator"></div>
+        <input type="range" min="1" max="50" value="6" step="1" id="inputSlider">
+        <div class="row">
+            <p>Password Length</p>
+            <span id="sliderValue">9</span>
+        </div>
+        <div class="row">
+            <label><input type="checkbox" id="lowercase" > Include Lowercase Letters (a-z)</label>
+        </div>
+        <div class="row">
+            <label><input type="checkbox" id="uppercase" > Include Uppercase Letters (A-Z)</label>
+        </div>
+        <div class="row">
+            <label><input type="checkbox" id="numbers" > Include Numbers (0-9)</label>
+        </div>
+        <div class="row">
+            <label><input type="checkbox" id="symbols"> Include Symbols (@-*)</label>
+        </div>
+
+
+        <div class="row">
+            <label for="favoriteWords">Favorite Words (comma-separated)</label>
+            <input type="text" class="fwords" id="favoriteWords" placeholder=" Enter your favorite words">
+            <button class="delete" id="delete">clear</button>
+        </div>
+
+        <button class="genBtn" id="genBtn">Generate Password</button>
+    </div>
+
+    
+    <script src="script.js"></script> 
+</body>
+</html>
